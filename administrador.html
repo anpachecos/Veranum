@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Perfil del Administrador - Hotel Veranum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranum | Perfil del Administrador</title>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/admin-style.css" type="text/css"> <!-- Estilos adicionales para la página de administrador -->
+
+    <!-- Estilo personalizado para la página de administrador -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        .admin-section {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+        }
+
+        .admin-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .admin-container h2 {
+            margin-bottom: 30px;
+        }
+
+        .admin-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .admin-option {
+            width: calc(33.33% - 40px);
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .admin-option:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-option i {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .admin-option p {
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Sección Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Menú Offcanvas -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="search-icon search-switch">
+            <i class="icon_search"></i>
+        </div>
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="img/flag.jpg" alt="">
+                <span>ES <i class="fa fa-angle-down"></i></span>
+                <div class="flag-dropdown">
+                    <ul>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">FR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="bk-btn">Reserva ahora</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./rooms.html">Habitaciones</a></li>
+                <li><a href="./about-us.html">Sobre nosotros</a></li>
+                <li><a href="./pages.html">Páginas</a>
+                    <ul class="dropdown">
+                        <li><a href="./room-details.html">Detalles de la habitación</a></li>
+                        <li><a href="./blog-details.html">Detalles del blog</a></li>
+                        <li><a href="#">Habitación familiar</a></li>
+                        <li><a href="#">Habitación premium</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Noticias</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> +569 5938 2321</li>
+            <li><i class="fa fa-envelope"></i> hoteles@veranum.com</li>
+        </ul>
+    </div>
+    <!-- Fin del Menú Offcanvas -->
+
+    <!-- Sección de Encabezado -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> +569 5938 2321</li>
+                            <li><i class="fa fa-envelope"></i> hoteles@veranum.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                            <div class="top-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="bk-btn">Reserva ahora</a>
+                            <div class="language-option">
+                                <img src="img/flag.jpg" alt="">
+                                <span>ES <i class="fa fa-angle-down"></i></span>
+                                <div class="flag-dropdown">
+                                    <ul>
+                                        <li><a href="#">EN</a></li>
+                                        <li><a href="#">FR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <h5>Hoteles Veranum</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li class="active"><a href="./index.html">Inicio</a></li>
+                                    <li><a href="./rooms.html">Habitaciones</a></li>
+                                    <li><a href="./about-us.html">Sobre nosotros</a></li>
+                                    <li><a href="./pages.html">Páginas</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./room-details.html">Detalles de la habitación</a></li>
+                                            <li><a href="./blog-details.html">Detalles del blog</a></li>
+                                            <li><a href="#">Habitación familiar</a></li>
+                                            <li><a href="#">Habitación premium</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./blog.html">Noticias</a></li>
+                                    <li><a href="./contact.html">Contacto</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin de la Sección de Encabezado -->
+
+    <!-- Sección de Perfil del Administrador -->
+    <section class="admin-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="admin-container">
+                        <h2>Perfil del Administrador</h2>
+                        <div class="admin-options">
+                            <div class="admin-option">
+                                <a href="#">
+                                    <i class="flaticon-plus"></i>
+                                    <p>Crear Habitación</p>
+                                </a>
+                            </div>
+                            <div class="admin-option">
+                                <a href="#">
+                                    <i class="flaticon-calendar"></i>
+                                    <p>Revisar Reservas</p>
+                                </a>
+                            </div>
+                            <div class="admin-option">
+                                <a href="#">
+                                    <i class="flaticon-printer"></i>
+                                    <p>Imprimir Reportes</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de la Sección de Perfil del Administrador -->
+
+    <!-- Sección de Pie de Página -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo">
+                            <a href="./index.html">
+                                <h5>Hoteles Veranum</h5>
+                            </a>
+                        </div>
+                        <p>Disfruta de tu estancia en Santiago y la Quinta Región con nosotros.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-footer-widget">
+                        <h4>Contacto</h4>
+                        <ul class="footer-contact-info">
+                            <li><i class="fa fa-phone"></i> +569 5938 2321</li>
+                            <li><i class="fa fa-envelope"></i> hoteles@veranum.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-footer-widget">
+                        <h4>Suscribirse</h4>
+                        <p>Suscríbete para recibir nuestras últimas noticias y ofertas especiales.</p>
+                        <div class="footer-subscribe">
+                            <form action="#">
+                                <input type="email" placeholder="Correo electrónico">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de la Sección de Pie de Página -->
+
+    <!-- Scripts JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
